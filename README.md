@@ -1,5 +1,3 @@
-Fitur
-
 1. Menghitung luas persegi panjang
 
 Input: Panjang dan lebar
