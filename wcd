@@ -1,0 +1,37 @@
+// 1. Menghitung luas persegi panjang
+function rectangleArea(length, width) {
+    return length * width;
+}
+console.log("Luas persegi panjang:", rectangleArea(5, 3));
+
+// 2. Menghitung diameter, keliling, dan luas lingkaran
+function circleProperties(radius) {
+    let diameter = 2 * radius;
+    let circumference = 2 * Math.PI * radius;
+    let area = Math.PI * radius * radius;
+    return { diameter, circumference, area };
+}
+let circle = circleProperties(5);
+console.log(`Diameter: ${circle.diameter}, Keliling: ${circle.circumference.toFixed(4)}, Luas: ${circle.area.toFixed(3)}`);
+
+// 3. Menentukan sudut segitiga jika dua sudut diketahui
+function thirdAngle(a, b) {
+    return 180 - (a + b);
+}
+console.log("Sudut ketigasegitiga:",
+ thirdAngle(80, 65));
+
+// 4. Menghitung selisih hari antara dua tanggal
+function dateDifference(date1, date2) {
+    let d1 = new Date(date1);
+    let d2 = new Date(date2);
+    let difference = Math.abs(d2 - d1);
+    return difference / (1000 * 60 * 60 * 24);
+}
+console.log("Selisih hari:", dateDifference("2024-03-19", "2024-03-21"));
+
+// 5. Mengubah nama menjadi inisial kapital
+function nameInitials(name) {
+    return name.split(" ").map(n => n[0].toUpperCase()).join("");
+}
+console.log("Inisial Nama:", nameInitials("Muh Arif"));
